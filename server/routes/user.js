@@ -16,7 +16,7 @@ const newUser = new User({
 })
 
 await newUser.save()
-return res.json({message: "record registered"})
+return res.json({status: true, message: "record registered"})
 })
 
 export {router as UserRouter}
